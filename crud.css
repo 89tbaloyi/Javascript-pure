@@ -1,57 +1,84 @@
-.container{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-color: rgb(2, 17, 30);
-
+.employee-form {
+    border-style: solid;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 10px;
+    /* width: 50%; */
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
 }
 
-.form_container{
-    margin-top: 20px;
-    width: 40vw;
-    border-radius: 10px;
-    height: 80vh;
-    padding: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.employees-table {
+    border-style: solid;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
+    padding: 20px;
+    /* width: 50%; */
+    margin: auto;
+    width: 70%;
+    /* border: 3px solid green; */
+    /* padding: 10px; */
 }
-.form input{
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid gray;
+
+body > table{
+    width: 80%;
 }
-.form button{
-    padding: 10px;
-    background: green;
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: black;
     color: white;
-    border-radius: 7px;
+    padding: 10px 18px;
+    /* margin: 0px 0; */
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.add_div{
-    width: 100%;
-    padding: 10px 0px 0px 90px;
+form div.form-action-buttons{
+    text-align: right;
 }
 
-.add_div button{
-    padding: 8px;
-    background-color: green;
-    color: white;
-    border-radius: 7px;
-}
-.create_button{
-    background-color: blue;
-    justify-items: center;
-    border-radius: solid 10px;
-}
-.update_button{
-    background-color: blue;
-    justify-items: center;
-    border-radius: solid 10px; 
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
 }
 
-.update_form, .create_form{
-    display: none;
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
 }
